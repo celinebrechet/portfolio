@@ -1,0 +1,37 @@
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    width: 50%;
+}
+
+.list li:nth-child(even){
+    align-items: center;
+}
+
+.list li:nth-child(odd){
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    .center{
+        margin: 0 1.0rem;
+    }
+    .list li {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .list li:nth-child(even){
+        text-align: center;
+    }
+    .list li:nth-child(odd){
+        text-align: center;
+    }
+}
